@@ -7,6 +7,9 @@
     @apply m-0 p-0 bg-gradient-to-l from-purple1 to-purple2 font-raleway text-white antialiased;
   }
   .nav-item {
-    @apply font-bold text-lg;
+    @apply font-semibold text-lg flex items-center text-xl;
+  }
+  .nav-item-navlink {
+    @apply flex justify-center items-center gap-2;
   }
 }
