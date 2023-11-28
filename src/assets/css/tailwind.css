@@ -7,9 +7,9 @@
     @apply m-0 p-0 bg-gradient-to-l from-purple1 to-purple2 font-raleway text-white antialiased;
   }
   .nav-item {
-    @apply font-semibold text-lg flex items-center text-xl;
+    @apply font-semibold text-xl flex items-center relative;
   }
   .nav-item-navlink {
-    @apply flex justify-center items-center gap-2;
+    @apply flex justify-center items-center gap-2 after:border-solid after:invisible hover:after:visible after:border-violet-700 after:border-2 after:rounded-2xl after:bottom-0  after:block after:h-1 after:left-0 after:absolute  after:w-0  after:transition-all  after:hover:w-full;
   }
 }
