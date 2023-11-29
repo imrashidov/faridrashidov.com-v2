@@ -7,6 +7,7 @@ export default {
       colors: {
         purple1: "#1b1429",
         purple2: "#140F23",
+        footer: "#0a0416",
       },
       fontFamily: {
         raleway: ["Raleway", "arial"],
