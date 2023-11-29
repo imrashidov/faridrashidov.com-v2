@@ -38,7 +38,7 @@ export default function Navbar() {
         </div>
         <div className="nav-github">
           <a href="https://github.com/imrashidov">
-            <FaGithub className="w-10 h-10 text-violet-900  rounded-full hover:shadow-spec hover:shadow-violet-600" />
+            <FaGithub className="w-10 h-10 text-violet-900  rounded-full hover:shadow-spec hover:shadow-footer" />
           </a>
         </div>
       </div>
