@@ -10,7 +10,7 @@
     @apply font-semibold text-xl flex items-center relative;
   }
   .nav-item-navlink {
-    @apply flex justify-center items-center gap-2 after:border-solid after:invisible hover:after:visible after:border-violet-900 after:border-2 after:rounded-2xl after:bottom-2  after:block after:h-1 after:left-0 after:absolute  after:w-0  after:transition-all  after:hover:w-full;
+    @apply flex justify-center items-center gap-2 after:border-solid after:invisible hover:after:visible after:border-violet-900 after:border-2 after:rounded-2xl after:bottom-1  after:block after:h-1 after:left-0 after:absolute  after:w-0  after:transition-all  after:hover:w-full;
   }
   .footer-icon {
     @apply text-white w-9 h-9 py-2 hover:rounded-full hover:shadow-spec hover:shadow-violet-900;

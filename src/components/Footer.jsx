@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="footer w-full absolute bottom-0 bg-footer py-4 ">
+    <div className="footer w-full  bottom-0 bg-footer py-4 ">
       <div className="footer-content mx-20 grid grid-cols-1 grid-rows-1 md:flex justify-between gap-3 ">
         <div className="footer-copyright w-full font-semibold flex justify-center items-center  ">
           Designed and Developed by Farid Rashidov
