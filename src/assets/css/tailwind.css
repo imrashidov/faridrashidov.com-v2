@@ -7,10 +7,10 @@
     @apply m-0 p-0 h-full w-full bg-gradient-to-l from-purple1 to-purple2 font-raleway text-white antialiased;
   }
   .nav-main {
-    @apply flex fixed justify-between items-center px-60 w-full py-3;
+    @apply flex fixed z-10 justify-between items-center px-60 w-full py-3;
   }
   .updated-nav-main {
-    @apply flex fixed justify-between items-center px-60 w-full py-3 bg-navbar  shadow-navbar backdrop-blur-lg transition-all ease-out duration-300;
+    @apply flex fixed z-10 justify-between items-center px-60 w-full py-3 bg-navbar  shadow-navbar backdrop-blur-lg transition-all ease-out duration-300;
   }
   .nav-item {
     @apply font-semibold text-xl flex items-center relative;
@@ -22,7 +22,7 @@
     @apply text-white w-9 h-9 py-2 hover:rounded-full hover:shadow-spec hover:shadow-violet-900;
   }
   .wave {
-    @apply animate-wave inline-block origin-custom;
+    @apply animate-wave inline-block origin-custom z-0;
   }
   .strong-description {
     @apply text-violet-700 font-bold;
