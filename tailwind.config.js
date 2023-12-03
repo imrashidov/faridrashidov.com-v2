@@ -8,12 +8,14 @@ export default {
         purple1: "#1b1429",
         purple2: "#140F23",
         footer: "#0a0416",
+        navbar: "#1b1a2ea9",
       },
       fontFamily: {
         raleway: ["Raleway", "arial"],
       },
       boxShadow: {
         spec: "0px 0px 5px 5px rgba(0 0 0 / 0.05)",
+        navbar: "0px 10px 10px 0px rgba(9, 5, 29, 0.171)",
       },
       transformOrigin: {
         custom: "70% 70%",

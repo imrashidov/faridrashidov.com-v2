@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { RiHome3Line } from "react-icons/ri";
 import { GoPerson } from "react-icons/go";
@@ -8,8 +8,24 @@ import { FaGithub } from "react-icons/fa";
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  const scrollHandler = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    scrollHandler();
+    // adding the event when scroll change Logo
+    window.addEventListener("scroll", scrollHandler);
+  });
+
   return (
-    <div className="nav-main flex justify-between items-center px-60 w-full py-3 ">
+    <div className={navbar ? "updated-nav-main" : "nav-main"}>
       <a href="/" className="flex-shrink-0 ">
         <img className="nav-logo w-48" src={logo} alt="Logo" />
       </a>
