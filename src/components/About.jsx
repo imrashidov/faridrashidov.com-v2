@@ -45,13 +45,13 @@ export default function About() {
       <h1 className="skills-heading pt-10 text-4xl font-semibold text-violet-700 text-center">
         Skills
       </h1>
-      <div className="skills px-72">
-        <div className="skills-body flex flex-wrap justify-center  py-10  gap-10">
+      <div className="skills px-60 box-border">
+        <div className="skills-body flex flex-wrap justify-center   py-10  gap-10">
           {SkillsData.map((item, index) => {
             return (
               <div
                 key={index}
-                className="skills-content   text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 "
+                className="skills-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500 hover:border-violet-400  transition-colors "
               >
                 {item.icon}
               </div>
@@ -68,7 +68,7 @@ export default function About() {
             return (
               <div
                 key={index}
-                className="tools-content   text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 "
+                className="tools-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500  hover:border-violet-400  transition-colors  "
               >
                 {item.icon}
               </div>
