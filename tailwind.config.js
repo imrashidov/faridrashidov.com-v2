@@ -35,6 +35,10 @@ export default {
           "100%": { transform: "rotate(0deg)" },
         },
       },
+      gridTemplateColumns: {
+        5: "1fr 1fr 1fr 1fr 1fr",
+        xs: "repeat(auto-fit,minmax(150px,1fr))",
+      },
     },
   },
   plugins: [],

@@ -1,9 +1,10 @@
 import React from "react";
+import { SkillsData } from "../data/SkillsData.jsx";
 import aboutImage2 from "../assets/about-image2.svg";
 
 export default function About() {
   return (
-    <div className="about-section h-screen pt-28">
+    <div className="about-section h-full pt-28">
       <div className="about-body px-80  flex justify-between">
         <div className="about-left w-full text-center pt-20">
           <h1 className="about-heading pb-10 text-4xl font-semibold  ">
@@ -40,10 +41,23 @@ export default function About() {
           <img src={aboutImage2} className="about-image w-[600px] h-[600px]" />
         </div>
       </div>
-      <h1 className="skills-heading pb-10 text-4xl font-semibold text-violet-700 text-center">
+      <h1 className="skills-heading py-10 text-4xl font-semibold text-violet-700 text-center">
         Skills
       </h1>
-      <div className="skills"></div>
+      <div className="skills px-28">
+        <div className=" grid  lg:grid-cols-5 sm:grid-cols-xs justify-items-center  gap-10">
+          {SkillsData.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="skills-content   text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 "
+              >
+                {item.icon}
+              </div>
+            );
+          })}
+        </div>
+      </div>
       <h1 className="frameworks-heading pb-10 text-4xl font-semibold text-violet-700 text-center">
         Tools
       </h1>
