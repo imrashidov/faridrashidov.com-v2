@@ -41,7 +41,7 @@ export default function Home() {
               </strong>{" "}
               MYSELF
             </h1>
-            <p className="about-body mt-10 text-lg ">
+            <p className="about-body mt-10 text-lg  ">
               As a proactive learner, I am excited to keep up with the latest
               industry trends and technologies, constantly refining my skills to
               stay at the forefront of modern web development practices. <br />
