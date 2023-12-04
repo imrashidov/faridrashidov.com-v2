@@ -1,5 +1,6 @@
 import React from "react";
 import { SkillsData } from "../data/SkillsData.jsx";
+import { ToolsData } from "../data/ToolsData.jsx";
 import aboutImage2 from "../assets/about-image2.svg";
 
 export default function About() {
@@ -41,11 +42,11 @@ export default function About() {
           <img src={aboutImage2} className="about-image w-[600px] h-[600px]" />
         </div>
       </div>
-      <h1 className="skills-heading py-10 text-4xl font-semibold text-violet-700 text-center">
+      <h1 className="skills-heading pt-10 text-4xl font-semibold text-violet-700 text-center">
         Skills
       </h1>
-      <div className="skills px-28">
-        <div className=" grid  lg:grid-cols-5 sm:grid-cols-xs justify-items-center  gap-10">
+      <div className="skills px-72">
+        <div className="skills-body flex flex-wrap justify-center  py-10  gap-10">
           {SkillsData.map((item, index) => {
             return (
               <div
@@ -58,10 +59,23 @@ export default function About() {
           })}
         </div>
       </div>
-      <h1 className="frameworks-heading pb-10 text-4xl font-semibold text-violet-700 text-center">
+      <h1 className="tools-heading pt-10 text-4xl font-semibold text-violet-700 text-center">
         Tools
       </h1>
-      <div className="frameworks"></div>
+      <div className="tools px-28">
+        <div className="tools-body flex flex-wrap justify-center pt-10 pb-20  gap-10">
+          {ToolsData.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="tools-content   text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 "
+              >
+                {item.icon}
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }
