@@ -7,10 +7,10 @@
     @apply m-0 p-0 h-full w-full bg-gradient-to-l from-purple1 to-purple2 font-raleway text-white antialiased;
   }
   .nav-main {
-    @apply flex fixed z-10 justify-between items-center px-60 w-full py-3 transition-all ease-out duration-300;
+    @apply flex fixed z-10 justify-between px-60 items-center w-full py-3 transition-all ease-out duration-300 max-sm:px-0;
   }
   .updated-nav-main {
-    @apply flex fixed z-10 justify-between items-center px-60 w-full py-3 bg-navbar  shadow-navbar backdrop-blur-lg transition-all ease-out duration-300;
+    @apply flex fixed z-10 justify-between items-center px-60 w-full py-3 bg-navbar  shadow-navbar backdrop-blur-lg transition-all ease-out duration-300 max-sm:px-0;
   }
   .nav-item {
     @apply font-semibold text-xl flex items-center relative;
@@ -28,10 +28,10 @@
     @apply text-violet-700 font-bold;
   }
   .strong {
-    @apply text-violet-700 font-semibold;
+    @apply text-violet-700 font-bold text-5xl max-sm:text-3xl;
   }
   .contact-icon {
-    @apply text-white w-10 h-10 hover:p-1 transition-all;
+    @apply text-white w-10 h-10 hover:p-1 transition-all max-sm:w-7;
   }
   #p7R_mc14 {
     @apply hover:shadow-spec cursor-pointer;

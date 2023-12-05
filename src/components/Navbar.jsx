@@ -26,11 +26,11 @@ export default function Navbar() {
 
   return (
     <div className={navbar ? "updated-nav-main" : "nav-main"}>
-      <a href="/" className="flex-shrink-0 ">
+      <a href="/" className="flex-shrink-0 mx-10 max-sm:mx-5 ">
         <img className="nav-logo w-48" src={logo} alt="Logo" />
       </a>
-      <div className="nav-items relative flex gap-24  ">
-        <div className="nav-item   ">
+      <div className="nav-items relative flex gap-24 mt-1 max-sm:hidden ">
+        <div className="nav-item w-full  ">
           <NavLink to="/" className="nav-item-navlink ">
             <RiHome3Line />
             Home

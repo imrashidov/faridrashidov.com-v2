@@ -11,37 +11,33 @@ export default function Home() {
   return (
     <section>
       {/* Home Section */}
-      <div className="home-content  px-80  pt-28 h-full flex justify-between">
-        <div className="home-left pt-52 w-full text-center  ">
-          <h1 className="home-heading text-4xl font-semibold pb-4 ">
+      <div className="home-content  px-80 max-sm:px-5 pt-28  h-full flex justify-between max-sm:flex-col">
+        <div className="home-left pt-52 max-sm:pt-5 w-full text-center  ">
+          <h1 className="home-heading text-4xl max-sm:text-3xl font-semibold pb-4 ">
             Hi! <span className="wave">👋🏻</span>
           </h1>
-          <h1 className="heading-name text-4xl font-semibold">
-            I'M{" "}
-            <strong className="strong text-violet-700 font-semibold">
-              FARID RASHIDOV
-            </strong>
+          <h1 className="heading-name text-4xl max-sm:text-3xl font-semibold">
+            I'M <strong className="strong">FARID RASHIDOV</strong>
           </h1>
-          <div className="typewriter pt-20 text-violet-700 text-4xl font-semibold">
+          <div className="typewriter  pt-20 max-sm:pt-10 text-violet-700 text-4xl max-sm:text-3xl font-semibold">
             <Type />
           </div>
         </div>
-        <div className="home-right flex-shrink-0 ">
-          <img src={homeImage} className="w-[600px] h-[600px] " />
+        <div className="home-right max-sm:my-10 flex-shrink-0 ">
+          <img
+            src={homeImage}
+            className="w-[600px] h-[600px] max-sm:h-[200px] "
+          />
         </div>
       </div>
       {/* About Section */}
-      <div className="about px-80 py-24">
-        <div className="about-container flex pt-20">
+      <div className="about px-80 max-sm:px-5 py-24 max-sm:py-5">
+        <div className="about-container flex max-sm:flex-col pt-20 max-sm:pt-5">
           <div className="about-description font-semibold ">
-            <h1 className="about-description-header text-center text-5xl ">
-              LET ME{" "}
-              <strong className="strong text-violet-700 font-semibold">
-                INTRODUCE
-              </strong>{" "}
-              MYSELF
+            <h1 className="about-description-header text-center text-5xl max-sm:text-3xl ">
+              LET ME <strong className="strong">INTRODUCE</strong> MYSELF
             </h1>
-            <p className="about-body mt-10 text-lg  ">
+            <p className="about-body mt-10 text-lg max-sm:text-md  ">
               As a proactive learner, I am excited to keep up with the latest
               industry trends and technologies, constantly refining my skills to
               stay at the forefront of modern web development practices. <br />
@@ -70,7 +66,7 @@ export default function Home() {
           </div>
         </div>
         <div className="contact">
-          <div className="contact-body flex flex-col justify-center items-center gap-4 text-4xl font-semibold py-10">
+          <div className="contact-body flex flex-col justify-center items-center gap-4 text-4xl max-sm:text-3xl font-semibold py-10">
             <h1>
               CONTACT <strong className="strong-description">ME</strong> ON
             </h1>
