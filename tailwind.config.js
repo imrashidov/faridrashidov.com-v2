@@ -19,6 +19,7 @@ export default {
       boxShadow: {
         spec: "0px 0px 5px 5px rgba(0 0 0 / 0.05)",
         navbar: "0px 10px 10px 0px rgba(9, 5, 29, 0.171)",
+        skills: "0px 0px 18px 7px rgba(9, 5, 29, 0.171)",
         project: "0px 0px 15px 2px rgba(9, 5, 29, 0.171)",
         projectHover: "0px 0px 18px 5px rgba(9, 5, 29, 0.171)",
       },

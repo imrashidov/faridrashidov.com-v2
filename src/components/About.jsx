@@ -51,7 +51,7 @@ export default function About() {
             return (
               <div
                 key={index}
-                className="skills-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500 hover:border-violet-400  transition-colors "
+                className="skills-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500 hover:shadow-skills hover:shadow-violet-500 duration-150 transition-all "
               >
                 {item.icon}
               </div>
@@ -68,7 +68,7 @@ export default function About() {
             return (
               <div
                 key={index}
-                className="tools-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500  hover:border-violet-400  transition-colors  "
+                className="tools-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500  hover:shadow-skills hover:shadow-violet-500 duration-150 transition-all duration-1000 "
               >
                 {item.icon}
               </div>
