@@ -33,4 +33,7 @@
   .contact-icon {
     @apply text-white w-10 h-10 hover:p-1 transition-all;
   }
+  #p7R_mc14 {
+    @apply hover:shadow-spec cursor-pointer;
+  }
 }
