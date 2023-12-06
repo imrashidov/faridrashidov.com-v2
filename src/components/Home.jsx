@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <section>
       {/* Home Section */}
-      <div className="home-content  px-80 max-sm:px-5 pt-28  h-full flex justify-between max-sm:flex-col">
+      <div className="home-content  px-80 max-sm:px-2 pt-28  h-full flex justify-between max-sm:flex-col">
         <div className="home-left pt-52 max-sm:pt-5 w-full text-center  ">
           <h1 className="home-heading text-4xl max-sm:text-3xl font-semibold pb-4 ">
             Hi! <span className="wave">👋🏻</span>
@@ -19,8 +19,8 @@ export default function Home() {
           <h1 className="heading-name text-4xl max-sm:text-3xl font-semibold">
             I'M <strong className="strong">FARID RASHIDOV</strong>
           </h1>
-          <div className="typewriter  pt-20 max-sm:pt-10 text-violet-700 text-4xl max-sm:text-3xl font-semibold">
-            <Type />
+          <div className="typewriter  pt-20 max-sm:pt-10 text-violet-700 text-4xl max-sm:text-3xl font-semibold ">
+            <Type className="type " />
           </div>
         </div>
         <div className="home-right max-sm:my-10 flex-shrink-0 ">
