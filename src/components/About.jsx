@@ -5,14 +5,14 @@ import aboutImage2 from "../assets/about-image2.svg";
 
 export default function About() {
   return (
-    <div className="about-section h-full pt-28">
-      <div className="about-body px-80  flex justify-between">
+    <div className="about-section h-full pt-28 max-sm:pt-20">
+      <div className="about-body px-80 max-sm:px-5 flex justify-between max-sm:flex-col">
         <div className="about-left w-full text-center pt-20">
-          <h1 className="about-heading pb-10 text-4xl font-semibold  ">
+          <h1 className="about-heading pb-10 text-4xl max-sm:text-3xl font-semibold  ">
             Know Who <strong className="strong">I'M</strong>
           </h1>
           <div className="about-card">
-            <p className="about-body text-lg font-semibold text-left">
+            <p className="about-body text-lg font-semibold text-left ">
               Hi Everyone, I am{" "}
               <strong className="strong-description">Farid Rashidov</strong>{" "}
               from{" "}
@@ -39,19 +39,22 @@ export default function About() {
           </div>
         </div>
         <div className="about-right w-full flex justify-center ">
-          <img src={aboutImage2} className="about-image w-[600px] h-[600px]" />
+          <img
+            src={aboutImage2}
+            className="about-image w-[600px] h-[600px] max-sm:h-[400px]"
+          />
         </div>
       </div>
       <h1 className="skills-heading pt-10 text-4xl font-semibold text-violet-700 text-center">
         Skills
       </h1>
-      <div className="skills px-60 box-border">
+      <div className="skills px-60 max-sm:px-2 box-border">
         <div className="skills-body flex flex-wrap justify-center   py-10  gap-10">
           {SkillsData.map((item, index) => {
             return (
               <div
                 key={index}
-                className="skills-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500 hover:shadow-skills hover:shadow-violet-500 duration-150 transition-all "
+                className="skills-content text-7xl max-sm:text-5xl border-violet-700  rounded-xl w-max  p-12 max-sm:p-10 border-2 shadow-md  shadow-violet-500 hover:shadow-skills hover:shadow-violet-500 duration-150 transition-all "
               >
                 {item.icon}
               </div>
@@ -62,13 +65,13 @@ export default function About() {
       <h1 className="tools-heading pt-10 text-4xl font-semibold text-violet-700 text-center">
         Tools
       </h1>
-      <div className="tools px-28">
+      <div className="tools px-28 max-sm:px-2">
         <div className="tools-body flex flex-wrap justify-center pt-10 pb-20  gap-10">
           {ToolsData.map((item, index) => {
             return (
               <div
                 key={index}
-                className="tools-content text-7xl border-violet-700  rounded-xl w-max  p-12 border-2 shadow-md  shadow-violet-500  hover:shadow-skills hover:shadow-violet-500 duration-150 transition-all duration-1000 "
+                className="tools-content text-7xl max-sm:text-5xl border-violet-700  rounded-xl w-max  p-12 max-sm:p-10 border-2 shadow-md  shadow-violet-500  hover:shadow-skills hover:shadow-violet-500 duration-150 transition-all duration-1000 "
               >
                 {item.icon}
               </div>
