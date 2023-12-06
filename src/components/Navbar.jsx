@@ -67,7 +67,7 @@ export default function Navbar() {
           )}
         </div>
         <ul
-          className={`nav-items gap-24 max-sm:gap-2 flex  items-center pb-0 max-sm:pb-5 max-sm:absolute static z-auto max-sm:z-[-1] max-sm:bg-footer max-sm:mt-4 max-sm:flex-col max-sm:left-0 max-sm:w-full w-auto pl-0 max-sm:pl-9  transition-all duration-300 ease-out  ${
+          className={`nav-items gap-24 max-sm:gap-2 flex  items-center pb-0 max-sm:pb-5 max-sm:absolute static z-auto max-sm:z-[-1] max-sm:bg-footer max-sm:mt-4 max-sm:flex-col max-sm:left-0 max-sm:w-full w-auto pl-0   transition-all duration-300 ease-out  ${
             menuClass
               ? "top-19 opacity-100"
               : "max-sm:top-0 max-sm:opacity-0 max-sm:hidden"
