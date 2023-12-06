@@ -14,7 +14,7 @@ export default function Resume() {
   }, []);
 
   return (
-    <div className="resume-section py-32">
+    <div className="resume-section py-32 max-sm:py-28">
       <div className="resume-body">
         <div className="btn-body flex justify-center">
           <a
@@ -26,7 +26,10 @@ export default function Resume() {
           </a>
         </div>
         <div className="pdf-body">
-          <Document file={pdf} className="w-full flex justify-center p-20">
+          <Document
+            file={pdf}
+            className="w-full flex justify-center p-20 max-sm:p-7"
+          >
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </div>
