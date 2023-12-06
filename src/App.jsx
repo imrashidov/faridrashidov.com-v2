@@ -5,12 +5,14 @@ import Projects from "./components/Projects.jsx";
 import Resume from "./components/Resume.jsx";
 import ErrorElement from "./components/ErrorElement.jsx";
 import Footer from "./components/Footer.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
