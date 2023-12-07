@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   const scrollHandler = () => {
-    if (window.scrollY >= 110) {
+    if (window.scrollY >= 20) {
       setNavbar(true);
     } else {
       setNavbar(false);
