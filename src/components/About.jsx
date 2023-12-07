@@ -5,8 +5,8 @@ import aboutImage2 from "../assets/about-image2.svg";
 
 export default function About() {
   return (
-    <div className="about-section h-full pt-28 max-lg:pt-20">
-      <div className="about-body px-80 lg:px-44 sm:max-lg:px-2 max-lg:px-2 pt-14  h-full flex justify-center max-lg:flex-col">
+    <div className="about-section h-full pt-28 max-lg:pt-2">
+      <div className="about-body px-80 lg:px-44 sm:max-lg:px-10 max-lg:px-10 pt-14  h-full flex justify-center max-lg:flex-col">
         <div className="about-left w-full flex items-center justify-center flex-col text-center pt-20">
           <h1 className="about-heading pb-10 text-4xl max-lg:text-3xl font-semibold  ">
             Know Who <strong className="strong">I'M</strong>
