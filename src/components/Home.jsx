@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
       {/* About Section */}
-      <div className="about px-80  max-lg:pt-5 sm:max-lg:px-2 max-lg:px-2 pt-16  h-full flex justify-center max-lg:flex-col">
+      <div className="about px-80  max-lg:pt-5 sm:max-lg:px-10 max-lg:px-10 pt-16  h-full flex justify-center max-lg:flex-col">
         <div className="about-description justify-center flex flex-col font-semibold ">
           <h1 className="about-description-header text-center text-5xl max-lg:text-3xl ">
             LET ME <strong className="strong">INTRODUCE</strong> MYSELF
