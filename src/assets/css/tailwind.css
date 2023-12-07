@@ -6,29 +6,23 @@
   body {
     @apply m-0 p-0 h-full w-full bg-gradient-to-l from-purple1 to-purple2 font-raleway text-white antialiased;
   }
-  /* .nav-main {
-    /* @apply w-full z-50 items-center top-0 left-0 fixed  px-60 py-3 flex justify-between transition-all ease-out duration-300 max-sm:px-0 max-sm:bg-footer max-sm:flex-col max-sm:items-start; */
-  /* } 
-  .updated-nav-main {
-    @apply      max-sm:px-0 max-sm:bg-footer max-sm:shadow-none;
-  } */
   .navbar {
-    @apply w-full z-10 md:px-60 fixed top-0 left-0 max-sm:bg-footer transition-all ease-in duration-300;
+    @apply w-full z-10 lg:px-60 lg:max-2xl:px-20 fixed top-0 left-0 max-lg:bg-footer transition-all ease-in duration-300;
   }
   .updated-navbar {
-    @apply w-full z-10 md:px-60 fixed top-0 left-0 bg-navbar shadow-navbar backdrop-blur-lg  transition-all ease-in duration-300 max-sm:bg-footer max-sm:shadow-none;
+    @apply w-full z-10 lg:px-60 lg:max-2xl:px-20 fixed top-0 left-0 bg-navbar shadow-navbar backdrop-blur-lg  transition-all ease-in duration-300 max-lg:bg-footer max-lg:shadow-none;
   }
   .nav-main {
-    @apply md:flex  items-center justify-between  py-4 md:px-10 px-7;
+    @apply lg:flex  items-center justify-between  py-4 lg:px-10 px-7;
   }
   .nav-icon {
     @apply flex items-center;
   }
   .nav-item {
-    @apply font-semibold  text-xl flex items-center relative;
+    @apply font-semibold  text-xl items-center relative;
   }
   .nav-item-navlink {
-    @apply flex justify-center items-center gap-2 after:border-solid after:invisible hover:after:visible after:border-violet-900 after:border-2 after:rounded-2xl after:bottom-1  after:block after:h-1 after:left-0 after:absolute  after:w-0  after:transition-all  after:hover:w-full max-sm:after:hidden;
+    @apply flex justify-center items-center gap-2 after:border-solid after:invisible hover:after:visible after:border-violet-900 after:border-2 after:rounded-2xl after:bottom-1  after:block after:h-1 after:left-0 after:absolute  after:w-0  after:transition-all  after:hover:w-full max-lg:after:hidden;
   }
   .footer-icon {
     @apply text-white w-9 h-9 py-2 hover:rounded-full hover:shadow-spec hover:shadow-violet-900;
@@ -40,10 +34,10 @@
     @apply text-violet-700 font-bold;
   }
   .strong {
-    @apply text-violet-700 font-bold  max-sm:text-3xl;
+    @apply text-violet-700 font-bold  max-lg:text-3xl;
   }
   .contact-icon {
-    @apply text-white w-10 h-10 hover:p-1 transition-all max-sm:w-7;
+    @apply text-white w-10 h-10 hover:p-1 transition-all max-lg:w-7;
   }
   #p7R_mc14 {
     @apply hover:shadow-spec cursor-pointer;

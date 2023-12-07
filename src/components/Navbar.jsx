@@ -50,14 +50,14 @@ export default function Navbar() {
 
   return (
     <div className={navbar ? "updated-navbar" : "navbar"}>
-      <div className="nav-main">
-        <div className="nav-icon max-sm:bg-footer">
+      <div className="nav-main ">
+        <div className="nav-icon mr-10 max-lg:bg-footer flex-shrink-0">
           <a href="/">
             <img className="nav-logo w-48" src={logo} alt="Logo" />
           </a>
         </div>
         <div
-          className="nav-menu text-3xl absolute right-8 top-5 cursor-pointer md:hidden text-violet-600 "
+          className="nav-menu text-3xl absolute right-8 top-5 cursor-pointer lg:hidden text-violet-600 "
           onClick={handleMenuToggle}
         >
           {isActive ? (
@@ -67,10 +67,10 @@ export default function Navbar() {
           )}
         </div>
         <ul
-          className={`nav-items gap-24 max-sm:gap-2 flex  items-center pb-0 max-sm:pb-5 max-sm:absolute static z-auto max-sm:z-[-1] max-sm:bg-footer max-sm:mt-4 max-sm:flex-col max-sm:left-0 max-sm:w-full w-auto pl-0   transition-all duration-300 ease-out  ${
+          className={`nav-items gap-24 max-lg:gap-2 flex  items-center pb-0 max-lg:pb-5 max-lg:absolute static z-auto max-lg:z-[-1] max-lg:bg-footer max-lg:mt-4 max-lg:flex-col max-lg:left-0 max-lg:w-full w-auto pl-0   transition-all duration-300 ease-out  ${
             menuClass
               ? "top-19 opacity-100"
-              : "max-sm:top-0 max-sm:opacity-0 max-sm:hidden"
+              : "max-lg:top-0 max-lg:opacity-0 max-lg:hidden"
           }`}
         >
           {Links.map((item, index) => {
@@ -80,7 +80,7 @@ export default function Navbar() {
                 className=" nav-item max-xs:my-7 max-xs:flex-col pb-2 mt-2 "
               >
                 <NavLink
-                  className="nav-item-navlink gap-2 "
+                  className="nav-item-navlink lg:max-xl:flex-col lg:max-xl:gap-0 gap-2 "
                   to={item.link}
                   onClick={handleMenuToggle}
                 >
