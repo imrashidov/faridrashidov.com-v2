@@ -214,7 +214,7 @@
     @apply w-full  min-h-full;
   }
   .error-content {
-    @apply flex flex-row max-lg:flex-col justify-center items-center max-lg:p-24 p-32 max-lg:gap-0 lg:max-2xl:gap-2 gap-56;
+    @apply flex flex-row max-lg:flex-col justify-center items-center max-lg:p-24 max-sm:py-20 max-sm:px-0 p-32 max-lg:gap-0 lg:max-2xl:gap-2 gap-56;
   }
   .error-left {
     @apply flex items-center flex-shrink-0 max-lg:w-80;
