@@ -7,10 +7,10 @@
     @apply m-0 p-0 h-full w-full bg-gradient-to-l from-purple1 to-purple2 font-raleway text-white antialiased;
   }
   .navbar {
-    @apply w-full z-10 lg:px-60 lg:max-2xl:px-20 fixed top-0 left-0 max-lg:bg-footer transition-all ease-in duration-300;
+    @apply w-full z-10 lg:px-60 lg:max-2xl:px-0 fixed top-0 left-0 max-lg:bg-footer transition-all ease-in duration-300;
   }
   .updated-navbar {
-    @apply w-full z-10 lg:px-60 lg:max-2xl:px-20 fixed top-0 left-0 bg-navbar shadow-navbar backdrop-blur-lg  transition-all ease-in duration-300 max-lg:bg-footer max-lg:shadow-none;
+    @apply w-full z-10 lg:px-60 lg:max-2xl:px-0 fixed top-0 left-0 bg-navbar shadow-navbar backdrop-blur-lg  transition-all ease-in duration-300 max-lg:bg-footer max-lg:shadow-none;
   }
   .nav-main {
     @apply lg:flex  items-center justify-between  py-4 lg:px-10 px-7;

@@ -14,8 +14,8 @@ export default function Resume() {
   }, []);
 
   return (
-    <div className="resume-section py-32 max-sm:py-28">
-      <div className="resume-body">
+    <div className="resume-section py-32 max-lg:py-28 ">
+      <div className="resume-body  mb-auto">
         <div className="btn-body flex justify-center">
           <a
             href={pdf}
