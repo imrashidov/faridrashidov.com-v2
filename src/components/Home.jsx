@@ -11,37 +11,34 @@ export default function Home() {
   return (
     <section>
       {/* Home Section */}
-      <div className="home-content  px-80 sm:max-lg:px-2 max-lg:px-2 pt-28  h-full flex justify-center max-lg:flex-col">
-        <div className="home-left pt-52 max-lg:pt-5 w-full text-center  ">
-          <h1 className="home-heading text-4xl max-lg:text-3xl font-semibold pb-4 ">
+      <div className="home-section">
+        <div className="home-left">
+          <h1 className="home-heading">
             Hi! <span className="wave">👋🏻</span>
           </h1>
-          <h1 className="heading-name text-4xl max-lg:text-3xl font-semibold">
+          <h1 className="home-heading-name">
             I'M <strong className="strong">FARID RASHIDOV</strong>
           </h1>
-          <div className="typewriter  pt-20 max-lg:pt-10 text-violet-700 text-4xl max-lg:text-3xl font-semibold ">
+          <div className="home-typewriter">
             <Type className="type " />
           </div>
         </div>
-        <div className="home-right max-lg:my-10 flex-shrink-0 max-lg:flex max-lg:justify-center max-lg:items-center ">
-          <img
-            src={homeImage}
-            className="max-lg:w-[400px] max-lg:h-[400px] w-[600px] h-[600px]"
-          />
+        <div className="home-right">
+          <img src={homeImage} className="home-image-right" />
         </div>
       </div>
       {/* About Section */}
-      <div className="about px-80  max-lg:pt-5 sm:max-lg:px-10 max-lg:px-10 pt-16  h-full flex justify-center max-lg:flex-col">
-        <div className="about-description justify-center flex flex-col font-semibold ">
-          <h1 className="about-description-header text-center text-5xl max-lg:text-3xl ">
+      <div className="home-about-section">
+        <div className="home-about-description">
+          <h1 className="home-about-description-header">
             LET ME <strong className="strong">INTRODUCE</strong> MYSELF
           </h1>
-          <p className="about-body mt-10 text-lg max-lg:text-md  ">
+          <p className="home-about-body">
             As a proactive learner, I am excited to keep up with the latest
             industry trends and technologies, constantly refining my skills to
             stay at the forefront of modern web development practices. <br />
             <br />I have enough knowledge about{" "}
-            <strong className="strong-description  ">
+            <strong className="strong-description">
               HTML, CSS, JavaScript and React
             </strong>{" "}
             <br />
@@ -60,20 +57,17 @@ export default function Home() {
             engaging and user-friendly applications.
           </p>
         </div>
-        <div className="about-avatar items-center justify-center flex max-lg:flex max-lg:justify-center max-lg:items-center flex-shrink-0 ">
-          <img
-            src={aboutImage}
-            className="max-lg:w-[400px] max-lg:h-[400px] w-[600px] h-[600px]"
-          />
+        <div className="home-about-image-div">
+          <img src={aboutImage} className="home-about-image" />
         </div>
       </div>
       {/* Contact Section */}
       <div className="contact">
-        <div className="contact-body flex flex-col justify-center items-center gap-4 text-4xl max-lg:text-3xl font-semibold py-10">
+        <div className="contact-body">
           <h1>
             CONTACT <strong className="strong-description">ME</strong> ON
           </h1>
-          <div className="contact-icons flex gap-10 ">
+          <div className="contact-icons">
             <a href="https://www.linkedin.com/in/frashidov/">
               <FaLinkedinIn className="contact-icon" />
             </a>

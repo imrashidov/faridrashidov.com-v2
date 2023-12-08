@@ -14,9 +14,9 @@ export default function Resume() {
   }, []);
 
   return (
-    <div className="resume-section py-32 max-lg:py-28 ">
-      <div className="resume-body  mb-auto">
-        <div className="btn-body flex justify-center">
+    <div className="resume-section">
+      <div className="resume-body">
+        <div className="resume-btn-body">
           <a
             href={pdf}
             download
@@ -25,11 +25,8 @@ export default function Resume() {
             <IoMdDownload /> Download CV
           </a>
         </div>
-        <div className="pdf-body">
-          <Document
-            file={pdf}
-            className="w-full flex justify-center p-20 max-sm:p-7"
-          >
+        <div className="resume-pdf-body">
+          <Document file={pdf} className="resume-pdf">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </div>

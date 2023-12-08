@@ -5,15 +5,13 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="footer w-full bottom-0 bg-footer py-4 ">
-      <div className="footer-content text-center mx-20 grid grid-cols-1 grid-rows-1 md:flex justify-between gap-3 ">
-        <div className="footer-copyright w-full font-semibold flex justify-center items-center  ">
+    <div className="footer-section">
+      <div className="footer-content">
+        <div className="footer-copyright">
           Designed and Developed by Farid Rashidov
         </div>
-        <div className="footer-copyright flex justify-center items-center font-semibold w-full">
-          Copyright © 2023
-        </div>
-        <div className="footer-social-media flex justify-center items-center gap-6 w-full ">
+        <div className="footer-copyright">Copyright © 2023</div>
+        <div className="footer-social-media">
           <a href="https://www.linkedin.com/in/frashidov/">
             <FaLinkedinIn className="footer-icon" />
           </a>
