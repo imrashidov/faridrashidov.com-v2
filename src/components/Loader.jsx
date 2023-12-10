@@ -1,5 +1,7 @@
 import React from "react";
-import "ldrs/reuleaux";
+import { reuleaux } from "ldrs";
+
+reuleaux.register();
 
 const Loader = () => {
   return (
@@ -9,7 +11,7 @@ const Loader = () => {
         stroke="5"
         stroke-length="0.15"
         bg-opacity="0.1"
-        speed="0.6"
+        speed="0.8"
         color="#7c3aed"
       ></l-reuleaux>
     </div>
