@@ -45,7 +45,7 @@
     @apply px-80 sm:max-lg:px-2 max-lg:px-2 pt-28  h-full flex justify-center max-lg:flex-col;
   }
   .home-left {
-    @apply pt-52 max-lg:pt-5 w-full text-center;
+    @apply pt-52 max-lg:pt-5 w-full text-center lg:max-2xl:px-0 lg:max-2xl:pt-44;
   }
   .home-heading {
     @apply text-4xl max-lg:text-3xl font-semibold pb-4;
@@ -54,10 +54,10 @@
     @apply text-4xl max-lg:text-3xl font-semibold;
   }
   .home-typewriter {
-    @apply pt-20 max-lg:pt-10 text-violet-700 text-4xl max-lg:text-3xl font-semibold;
+    @apply pt-20 max-lg:pt-10 text-violet-700 text-4xl max-lg:text-3xl font-semibold lg:max-2xl:w-60 lg:max-2xl:pt-5;
   }
   .home-right {
-    @apply max-lg:my-10 flex-shrink-0 max-lg:flex max-lg:justify-center max-lg:items-center;
+    @apply max-lg:my-10 flex-shrink-0 max-lg:flex max-lg:justify-center max-lg:items-center lg:max-2xl:ml-20;
   }
   .home-image-right {
     @apply max-lg:w-[400px] max-lg:h-[400px] w-[600px] h-[600px];
