@@ -11,7 +11,7 @@ export default {
         navbar: "#1b1a2ea9",
       },
       fontFamily: {
-        raleway: ["Raleway", "arial"],
+        sans: ["Raleway", "arial"],
       },
       spacing: {
         37.5: "37.5rem",

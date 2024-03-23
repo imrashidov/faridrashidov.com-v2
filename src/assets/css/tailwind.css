@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    @apply m-0 p-0 h-full w-full bg-gradient-to-l from-purple1 to-purple2 font-raleway text-white antialiased;
+    @apply m-0 p-0 h-full w-full bg-gradient-to-l from-purple1 to-purple2  text-white antialiased;
   }
   .navbar {
     @apply w-full z-10 lg:px-60 lg:max-2xl:px-0 fixed top-0 left-0 max-lg:bg-footer transition-all ease-in duration-300;
@@ -161,7 +161,7 @@
     @apply text-center font-bold text-xl max-lg:text-base text-violet-600;
   }
   .card-description {
-    @apply text-justify py-4 px-3 w-80 max-lg:w-52 h-60;
+    @apply text-justify py-4 px-3 w-80 max-lg:w-52 h-60 m-auto;
   }
   .card-subheading {
     @apply pt-4 max-lg:pt-0 font-semibold text-violet-600;
