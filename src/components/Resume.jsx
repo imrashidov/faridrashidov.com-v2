@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pdf from "../assets/Farid Rashidov - CV.pdf";
+import pdf from "../assets/Rashidov Farid - CV.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import { IoMdDownload } from "react-icons/io";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
