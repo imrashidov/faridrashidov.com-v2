@@ -1,6 +1,6 @@
-import react from "react";
-import screenshotMillion from "../assets/screenshot-million.png";
+import screenshotMillion from "../assets/screenshot-milliOn.png";
 import screenshotCarRental from "../assets/screenshot-carRental.png";
+import screenshotBayilMarina from "../assets/screenshot-bayilMarina.png";
 
 export const ProjectsData = [
   {
@@ -20,5 +20,15 @@ export const ProjectsData = [
     features2: "📱 Fully Responsive",
     github: "https://github.com/imrashidov/car-rental-project",
     demo: "https://car-rental-rashidov.vercel.app/",
+  },
+  {
+    image: screenshotBayilMarina,
+    title: "Bayil Marina Residence",
+    description:
+      "React.js, React Router, React-Helmet, Swiper, Redux, Framer-Motion, Firebase",
+    features: "🎨 Styled with Tailwind CSS",
+    features2: "📱 Fully Responsive",
+    github: "https://github.com/imrashidov/bayil-marina",
+    demo: "https://bayilmarina.surge.sh/",
   },
 ];
