@@ -45,7 +45,6 @@ export default function Navbar() {
       icon: <AiOutlineFundProjectionScreen />,
       link: "/projects",
     },
-    { name: "Resume", icon: <IoDocumentOutline />, link: "/resume" },
   ];
 
   return (

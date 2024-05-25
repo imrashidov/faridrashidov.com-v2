@@ -176,21 +176,6 @@
     @apply w-5 h-5;
   }
 
-  /* Resume Section */
-
-  .resume-section {
-    @apply py-32 max-lg:py-28;
-  }
-  .resume-body {
-    @apply mb-auto;
-  }
-  .resume-btn-body {
-    @apply flex justify-center;
-  }
-  .resume-pdf {
-    @apply w-full flex justify-center p-20 max-sm:p-7;
-  }
-
   /* Footer */
 
   .footer-section {
