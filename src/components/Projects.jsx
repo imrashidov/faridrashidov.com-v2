@@ -1,11 +1,10 @@
-import React from "react";
 import { ProjectsData } from "../data/ProjectsData.jsx";
 import { TfiWorld } from "react-icons/tfi";
 import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <div className="projects-section">
+    <section className="projects-section">
       <h1 className="projects-heading">
         My <strong className="strong">Works</strong>
       </h1>
@@ -43,6 +42,6 @@ export default function Projects() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

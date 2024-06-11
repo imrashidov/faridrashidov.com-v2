@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { RiHome3Line } from "react-icons/ri";
 import { GoPerson } from "react-icons/go";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { IoDocumentOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
@@ -48,7 +47,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className={navbar ? "updated-navbar" : "navbar"}>
+    <header className={navbar ? "updated-navbar" : "navbar"}>
       <div className="nav-main">
         <div className="nav-icon">
           <a href="/">
@@ -89,6 +88,6 @@ export default function Navbar() {
           </div>
         </ul>
       </div>
-    </div>
+    </header>
   );
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import Type from "./Type.jsx";
 import homeImage from "../assets/home-image.svg";
 import aboutImage from "../assets/about-image.svg";
@@ -9,9 +8,9 @@ import { MdEmail } from "react-icons/md";
 
 export default function Home() {
   return (
-    <section>
+    <main>
       {/* Home Section */}
-      <div className="home-section">
+      <section className="home-section">
         <div className="home-left">
           <h1 className="home-heading">
             Hi! <span className="wave">👋🏻</span>
@@ -26,9 +25,9 @@ export default function Home() {
         <div className="home-right">
           <img src={homeImage} className="home-image-right" />
         </div>
-      </div>
+      </section>
       {/* About Section */}
-      <div className="home-about-section">
+      <section className="home-about-section">
         <div className="home-about-description">
           <h1 className="home-about-description-header">
             LET ME <strong className="strong">INTRODUCE</strong> MYSELF
@@ -60,9 +59,9 @@ export default function Home() {
         <div className="home-about-image-div">
           <img src={aboutImage} className="home-about-image" />
         </div>
-      </div>
+      </section>
       {/* Contact Section */}
-      <div className="contact">
+      <section className="contact">
         <div className="contact-body">
           <h1>
             CONTACT <strong className="strong-description">ME</strong> ON
@@ -82,7 +81,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }

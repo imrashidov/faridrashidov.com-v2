@@ -1,11 +1,10 @@
-import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="footer-section">
+    <footer className="footer-section">
       <div className="footer-content">
         <div className="footer-copyright">
           Designed and Developed by Farid Rashidov
@@ -23,6 +22,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

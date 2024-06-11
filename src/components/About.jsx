@@ -1,11 +1,10 @@
-import React from "react";
 import { SkillsData } from "../data/SkillsData.jsx";
 import { ToolsData } from "../data/ToolsData.jsx";
 import aboutImage2 from "../assets/about-image2.svg";
 
 export default function About() {
   return (
-    <div className="about-section">
+    <section className="about-section">
       <div className="about-body">
         <div className="about-left">
           <h1 className="about-heading">
@@ -66,6 +65,6 @@ export default function About() {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

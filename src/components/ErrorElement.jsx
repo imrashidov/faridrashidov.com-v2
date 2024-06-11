@@ -1,10 +1,9 @@
-import React from "react";
 import errorImage from "../assets/404-image.svg";
 import { NavLink } from "react-router-dom";
 
 function ErrorElement() {
   return (
-    <div className="error-section">
+    <section className="error-section">
       <div className="error-content">
         <div className="error-left">
           <img src={errorImage} className="error-image" />
@@ -20,7 +19,7 @@ function ErrorElement() {
           </NavLink>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
