@@ -12,31 +12,31 @@ import Loader from "./components/Loader.jsx";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      setLoading(false);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await new Promise((resolve) => setTimeout(resolve, 2000));
+  //     setLoading(false);
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
-        <div>
-          <ScrollToTop />
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="*" element={<ErrorElement />} />
-          </Routes>
-          <Footer />
-        </div>
-      )}
+      ) : ( */}
+      <div>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<ErrorElement />} />
+        </Routes>
+        <Footer />
+      </div>
+      {/* )} */}
     </div>
   );
 }

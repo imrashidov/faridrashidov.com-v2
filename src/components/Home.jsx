@@ -16,7 +16,7 @@ export default function Home() {
             Hi! <span className="wave">👋🏻</span>
           </h1>
           <h1 className="home-heading-name">
-            I'M <strong className="strong">FARID RASHIDOV</strong>
+            I&apos;M <strong className="strong">FARID RASHIDOV</strong>
           </h1>
           <div className="home-typewriter">
             <Type className="type " />
@@ -70,13 +70,13 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/frashidov/">
               <FaLinkedinIn className="contact-icon" />
             </a>
-            <a href="https://www.instagram.com/faridrashiidov/">
+            <a href="https://www.instagram.com/faridrashidov.jpg/">
               <FaInstagram className="contact-icon  " />
             </a>
             <a href="https://github.com/imrashidov/">
               <FaGithub className="contact-icon" />
             </a>
-            <a href="mailto: contact@faridrashidov.com">
+            <a href="mailto: frashidov@gmail.com">
               <MdEmail className="contact-icon" />
             </a>
           </div>

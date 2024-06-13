@@ -1,6 +1,5 @@
-import { SkillsData } from "../data/SkillsData.jsx";
-import { ToolsData } from "../data/ToolsData.jsx";
 import aboutImage2 from "../assets/about-image2.svg";
+import Skills from "./Skills";
 
 export default function About() {
   return (
@@ -8,7 +7,7 @@ export default function About() {
       <div className="about-body">
         <div className="about-left">
           <h1 className="about-heading">
-            Know Who <strong className="strong">I'M</strong>
+            Know Who <strong className="strong">I&apos;m</strong>
           </h1>
           <div className="about-card">
             <p className="about-card-body">
@@ -25,15 +24,15 @@ export default function About() {
               </strong>{" "}
               through online resources, documentation, and real-world projects.{" "}
               <br />
-              <br /> In the realm of front-end development, I've delved deep
-              into{" "}
+              <br /> In the realm of front-end development, I&apos;ve delved
+              deep into{" "}
               <strong className="strong-description">
                 HTML, CSS, and JavaScript,
               </strong>{" "}
               using these languages to craft visually appealing and responsive
-              user interfaces. I'm well-versed in modern front-end libraries and
-              frameworks, ensuring a seamless blend of aesthetics and
-              functionality in every project.
+              user interfaces. I&apos;m well-versed in modern front-end
+              libraries and frameworks, ensuring a seamless blend of aesthetics
+              and functionality in every project.
             </p>
           </div>
         </div>
@@ -41,30 +40,14 @@ export default function About() {
           <img src={aboutImage2} className="about-image" />
         </div>
       </div>
-      <h1 className="skills-heading">Skills</h1>
-      <div className="skills-body">
-        <div className="skills-content">
-          {SkillsData.map((item, index) => {
-            return (
-              <div key={index} className="skills">
-                {item.icon}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <h1 className="tools-heading">Tools</h1>
-      <div className="tools-body">
-        <div className="tools-content">
-          {ToolsData.map((item, index) => {
-            return (
-              <div key={index} className="tools">
-                {item.icon}
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <Skills title="Languages" api="languages" />
+      <Skills title="Frameworks" api="frameworks" />
+      <Skills title="CSS" api="csses" />
+      <Skills title="Databases / ORM" api="orms" />
+      <Skills title="CI/CD VCS" api="vcs" />
+      <Skills title="Design" api="designs" />
+      <Skills title="Hosting / SaaS" api="hostings" />
+      <Skills title="Tools" api="tools" />
     </section>
   );
 }

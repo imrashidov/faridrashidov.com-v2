@@ -1,15 +1,25 @@
-import { ProjectsData } from "../data/ProjectsData.jsx";
+import { useState, useEffect } from "react";
 import { TfiWorld } from "react-icons/tfi";
 import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
+  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(`${apiUrl}/api/projects`);
+      const data = await response.json();
+      setProjects(data);
+    };
+    fetchData();
+  }, []);
   return (
     <section className="projects-section">
       <h1 className="projects-heading">
         My <strong className="strong">Works</strong>
       </h1>
       <div className="projects-content">
-        {ProjectsData.map((item, index) => {
+        {projects.map((item, index) => {
           return (
             <div className="projects-card-body" key={index}>
               <div className="project-card">
