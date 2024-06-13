@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import NavbarButton from "./NavbarButton";
 import { RiHome3Line } from "react-icons/ri";
 import { GoPerson } from "react-icons/go";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
@@ -58,11 +59,7 @@ export default function Navbar() {
           </a>
         </div>
         <div className="nav-menu" onClick={handleMenuToggle}>
-          {isActive ? (
-            <IoMdClose className="nav-menu-icon" />
-          ) : (
-            <IoMenu className="nav-menu-icon" />
-          )}
+          <NavbarButton isOpen={isActive} />
         </div>
         <motion.ul
           className="nav-items"
