@@ -12,7 +12,7 @@ export default function Projects() {
       setProjects(data);
     };
     fetchData();
-  }, []);
+  }, [apiUrl]);
   return (
     <section className="projects-section">
       <h1 className="projects-heading">
