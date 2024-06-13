@@ -14,7 +14,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/frashidov/">
             <FaLinkedinIn className="footer-icon" />
           </a>
-          <a href="https://www.instagram.com/faridrashiidov/">
+          <a href="https://www.instagram.com/faridrashidov.jpg/">
             <FaInstagram className="footer-icon  " />
           </a>
           <a href="https://github.com/imrashidov/">
