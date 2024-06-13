@@ -1,5 +1,5 @@
 import aboutImage2 from "../assets/about-image2.svg";
-import Skills from "./Skills";
+import Skills from "../components/Skills";
 
 export default function About() {
   return (

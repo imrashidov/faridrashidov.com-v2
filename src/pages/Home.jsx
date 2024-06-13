@@ -1,4 +1,4 @@
-import Type from "./Type.jsx";
+import Type from "../components/Type";
 import homeImage from "../assets/home-image.svg";
 import aboutImage from "../assets/about-image.svg";
 import { FaLinkedinIn } from "react-icons/fa";
