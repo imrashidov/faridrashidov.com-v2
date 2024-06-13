@@ -16,7 +16,7 @@ const NavbarButton = ({ isOpen }) => {
           variants={{
             open: {
               rotate: "45deg",
-              translateY: "10px",
+              translateY: "9px",
             },
           }}
         />
@@ -47,7 +47,7 @@ const NavbarButton = ({ isOpen }) => {
           variants={{
             open: {
               rotate: "-45deg",
-              translateY: "-6px",
+              translateY: "-5px",
             },
           }}
         />
