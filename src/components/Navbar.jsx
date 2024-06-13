@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { RiHome3Line } from "react-icons/ri";
 import { GoPerson } from "react-icons/go";
@@ -8,18 +9,20 @@ import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import logo from "../assets/logo.png";
 
+const navDropdown = {
+  open: { translateY: 0 },
+  closed: { translateY: -300 },
+};
+
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  const [menuClass, setMenuClass] = useState("");
   const [isActive, setIsActive] = useState(false);
 
   const handleMenuToggle = () => {
     if (isActive === false) {
       setIsActive(true);
-      setMenuClass(true);
     } else {
       setIsActive(false);
-      setMenuClass(false);
     }
   };
 
@@ -61,12 +64,10 @@ export default function Navbar() {
             <IoMenu className="nav-menu-icon" />
           )}
         </div>
-        <ul
-          className={`nav-items ${
-            menuClass
-              ? "top-14 opacity-100"
-              : "max-lg:top-0 max-lg:opacity-0 max-lg:hidden"
-          }`}
+        <motion.ul
+          className="nav-items"
+          animate={isActive ? navDropdown.open : navDropdown.closed}
+          transition={{ duration: 0.3 }}
         >
           {Links.map((item, index) => {
             return (
@@ -86,7 +87,7 @@ export default function Navbar() {
               <FaGithub className="nav-github-logo" />
             </a>
           </div>
-        </ul>
+        </motion.ul>
       </div>
     </header>
   );
